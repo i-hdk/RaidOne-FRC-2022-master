@@ -1,0 +1,19 @@
+{
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/Shuffleboard/Main/Auton Selection": "String Chooser"
+    }
+  },
+  "NetworkTables": {
+    "Shuffleboard": {
+      "Main": {
+        "Auton Selection": {
+          "open": true
+        },
+        "open": true
+      },
+      "open": true
+    }
+  }
+}
