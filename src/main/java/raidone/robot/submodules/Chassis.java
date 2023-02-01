@@ -190,7 +190,7 @@ public class Chassis extends Submodule {
         // Reset sensors (must happen before odom init)
         zero();
 
-        mOdometry = new DifferentialDriveOdometry(periodicIO.heading);
+        mOdometry = new DifferentialDriveOdometry(Rotation2d.fromDegrees(0), 0, 0);
 
         setBrakeMode(true);
         changeShifterState(GearShift.LOW_TORQUE);
@@ -437,7 +437,7 @@ public class Chassis extends Submodule {
      */
     public void resetOdometry(Pose2d pose) {
         resetEncoders();
-        mOdometry.resetPosition(pose, periodicIO.heading);
+        mOdometry.resetPosition(periodicIO.rotation, 0, 0, pose);
     }
 
     /** Updates odom */

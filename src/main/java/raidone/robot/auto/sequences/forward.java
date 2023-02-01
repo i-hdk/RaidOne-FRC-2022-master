@@ -14,7 +14,7 @@ import java.util.Arrays;
 import com.pathplanner.lib.PathPlanner;
 
 public class forward extends AutoSequence {
-    private static final Trajectory path1 = PathPlanner.loadPath("forward", AutoConstants.MAX_VEL, AutoConstants.MAX_ACCEL);
+    private static final Trajectory path1 = PathPlanner.loadPath("New New New Path", AutoConstants.MAX_VEL, AutoConstants.MAX_ACCEL);
 
     public forward() {}
 
